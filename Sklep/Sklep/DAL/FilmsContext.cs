@@ -17,5 +17,10 @@ namespace Sklep.DAL
         {
 
         }
+
+        static FilmsContext()
+        {
+            Database.SetInitializer(new FilmsInitializer());
+        }
     }
 }
