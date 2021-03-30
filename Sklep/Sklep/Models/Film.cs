@@ -25,6 +25,8 @@ namespace Sklep.Models
 
         public int CategoryId { get; set; }
         
+        public int FilmLength { get; set; }
+
         public virtual Category Category { get; set; }
     }
 }

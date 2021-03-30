@@ -95,7 +95,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\banner-film.png" />
+    <Content Include="Content\index.html" />
+    <Content Include="Content\script.js" />
+    <Content Include="Content\Shrek1.jpg" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\szklana.jpg" />
+    <Content Include="Content\szybcy.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -107,6 +113,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Film.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +125,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\kontakt.cshtml" />
+    <Content Include="Views\Home\metodyPlatnosci.cshtml" />
+    <Content Include="Views\Home\onas.cshtml" />
+    <Content Include="Views\Home\regulamin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

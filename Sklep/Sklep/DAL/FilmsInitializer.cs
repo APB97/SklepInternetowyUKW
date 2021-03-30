@@ -1,4 +1,5 @@
 ﻿using Sklep.Models;
+using Sklep.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,14 +8,14 @@ using System.Web;
 
 namespace Sklep.DAL
 {
-    public class FilmsInitializer : DropCreateDatabaseAlways<FilmsContext>
+    internal class FilmsInitializer : MigrateDatabaseToLatestVersion<FilmsContext, Configuration>//DropCreateDatabaseIfModelChanges<FilmsContext> //DropCreateDatabaseAlways<FilmsContext>
     {
-        protected override void Seed(FilmsContext context)
-        {
-            base.Seed(context);
-            SeedFilms(context);
+        //protected override void Seed(FilmsContext context)
+        //{
+            //base.Seed(context);
+            //SeedFilms(context);
 
-        }
+        //}
 
         private static void SeedFilms(FilmsContext context)
         {
