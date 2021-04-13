@@ -1,5 +1,6 @@
 ﻿namespace Sklep.Migrations
 {
+    using Sklep.DAL;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -15,6 +16,7 @@
 
         protected override void Seed(Sklep.DAL.FilmsContext context)
         {
+            FilmsInitializer.SeedFilms(context);
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method

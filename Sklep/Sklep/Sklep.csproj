@@ -50,6 +50,15 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Glimpse.Ado, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.Ado.1.7.3\lib\net45\Glimpse.Ado.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Core, Version=1.8.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.1.8.6\lib\net45\Glimpse.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.EF6, Version=1.6.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.EF6.1.6.5\lib\net45\Glimpse.EF6.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -96,22 +105,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\banner-film.png" />
-    <Content Include="Content\Cube.JPG" />
-    <Content Include="Content\DruzynaPierscienia.JPG" />
-    <Content Include="Content\Hellraiser.JPG" />
-    <Content Include="Content\Iluzjonista.JPG" />
+    <Content Include="Content\Graphics\Cube.JPG" />
+    <Content Include="Content\Graphics\DruzynaPierscienia.JPG" />
+    <Content Include="Content\Graphics\Hellraiser.JPG" />
+    <Content Include="Content\Graphics\Iluzjonista.JPG" />
     <Content Include="Content\index.html" />
-    <Content Include="Content\MilczenieOwiec.JPG" />
-    <Content Include="Content\Numer23.JPG" />
-    <Content Include="Content\Red.JPG" />
+    <Content Include="Content\Graphics\MilczenieOwiec.JPG" />
+    <Content Include="Content\Graphics\Numer23.JPG" />
+    <Content Include="Content\Graphics\Red.JPG" />
     <Content Include="Content\script.js" />
-    <Content Include="Content\SekretneOkno.JPG" />
+    <Content Include="Content\Graphics\SekretneOkno.JPG" />
     <Content Include="Content\Shrek1.jpg" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\szklana.jpg" />
-    <Content Include="Content\szybcy.jpg" />
-    <Content Include="Content\Teksanska.jpg" />
-    <Content Include="Content\TylkoNieMow.JPG" />
+    <Content Include="Content\Graphics\szklana.jpg" />
+    <Content Include="Content\Graphics\szybcy.jpg" />
+    <Content Include="Content\Graphics\Teksanska.jpg" />
+    <Content Include="Content\Graphics\TylkoNieMow.JPG" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -124,6 +133,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\AppConfig.cs" />
+    <Compile Include="Infrastructure\UrlHelpers.cs" />
     <Compile Include="Migrations\202104130638069_InitialCreate.cs" />
     <Compile Include="Migrations\202104130638069_InitialCreate.designer.cs">
       <DependentUpon>202104130638069_InitialCreate.cs</DependentUpon>
@@ -131,6 +142,14 @@
     <Compile Include="Migrations\202104130642265_delete FilmLength.cs" />
     <Compile Include="Migrations\202104130642265_delete FilmLength.designer.cs">
       <DependentUpon>202104130642265_delete FilmLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104130758448_add_ImageName.cs" />
+    <Compile Include="Migrations\202104130758448_add_ImageName.designer.cs">
+      <DependentUpon>202104130758448_add_ImageName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104130837539_add_AddDate.cs" />
+    <Compile Include="Migrations\202104130837539_add_AddDate.designer.cs">
+      <DependentUpon>202104130837539_add_AddDate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -166,6 +185,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104130642265_delete FilmLength.resx">
       <DependentUpon>202104130642265_delete FilmLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104130758448_add_ImageName.resx">
+      <DependentUpon>202104130758448_add_ImageName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104130837539_add_AddDate.resx">
+      <DependentUpon>202104130837539_add_AddDate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

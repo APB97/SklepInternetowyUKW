@@ -77,3 +77,8 @@ C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.pdb
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.InitialCreate.resources
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csproj.GenerateResource.cache
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.deleteFilmLength.resources
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.add_ImageName.resources
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Glimpse.Ado.dll
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Glimpse.Core.dll
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Glimpse.EF6.dll
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.add_AddDate.resources
