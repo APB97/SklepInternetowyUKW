@@ -21,11 +21,11 @@ namespace Sklep.Models
         [Required(ErrorMessage = "Podaj cenę")]
         public decimal Price { get; set; }
         
-        public DateTime AddDate { get; set; }
+        //public DateTime AddDate { get; set; }
 
         public int CategoryId { get; set; }
         
-        public int FilmLength { get; set; }
+        //public int FilmLength { get; set; }
 
         public virtual Category Category { get; set; }
     }

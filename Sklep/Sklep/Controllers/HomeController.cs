@@ -1,5 +1,6 @@
 ﻿using Sklep.DAL;
 using Sklep.Models;
+using Sklep.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,13 @@ namespace Sklep.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            // db.Categories.Add(new Category { CategoryId = 7, Name = "Anime", Desc = "Nani?" });
-            return View();
+            //db.Categories.Add(new Category { CategoryId = 7, Name = "Anime", Desc = "Nani?" });
+
+            var categories = db.Categories.ToList();
+
+            var ivm = new IndexViewModel() { Categories = categories };
+
+            return View(ivm);
         }
 
         public ActionResult StaticSite(string name)

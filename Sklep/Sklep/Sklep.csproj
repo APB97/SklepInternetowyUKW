@@ -96,27 +96,47 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\banner-film.png" />
+    <Content Include="Content\Cube.JPG" />
+    <Content Include="Content\DruzynaPierscienia.JPG" />
+    <Content Include="Content\Hellraiser.JPG" />
+    <Content Include="Content\Iluzjonista.JPG" />
     <Content Include="Content\index.html" />
+    <Content Include="Content\MilczenieOwiec.JPG" />
+    <Content Include="Content\Numer23.JPG" />
+    <Content Include="Content\Red.JPG" />
     <Content Include="Content\script.js" />
+    <Content Include="Content\SekretneOkno.JPG" />
     <Content Include="Content\Shrek1.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\szklana.jpg" />
     <Content Include="Content\szybcy.jpg" />
+    <Content Include="Content\Teksanska.jpg" />
+    <Content Include="Content\TylkoNieMow.JPG" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FilmsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\FilmsContext.cs" />
     <Compile Include="DAL\FilmsInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104130638069_InitialCreate.cs" />
+    <Compile Include="Migrations\202104130638069_InitialCreate.designer.cs">
+      <DependentUpon>202104130638069_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104130642265_delete FilmLength.cs" />
+    <Compile Include="Migrations\202104130642265_delete FilmLength.designer.cs">
+      <DependentUpon>202104130642265_delete FilmLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Film.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\IndexViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -129,6 +149,7 @@
     <Content Include="Views\Home\metodyPlatnosci.cshtml" />
     <Content Include="Views\Home\onas.cshtml" />
     <Content Include="Views\Home\regulamin.cshtml" />
+    <Content Include="Views\Films\List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -138,6 +159,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202104130638069_InitialCreate.resx">
+      <DependentUpon>202104130638069_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104130642265_delete FilmLength.resx">
+      <DependentUpon>202104130642265_delete FilmLength.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -3,21 +3,15 @@ using Sklep.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Web;
 
 namespace Sklep.DAL
 {
-    internal class FilmsInitializer : MigrateDatabaseToLatestVersion<FilmsContext, Configuration>//DropCreateDatabaseIfModelChanges<FilmsContext> //DropCreateDatabaseAlways<FilmsContext>
+    internal class FilmsInitializer : /*DropCreateDatabaseAlways<FilmsContext>*/MigrateDatabaseToLatestVersion<FilmsContext, Configuration>/*DropCreateDatabaseIfModelChanges<FilmsContext>*/
     {
-        //protected override void Seed(FilmsContext context)
-        //{
-            //base.Seed(context);
-            //SeedFilms(context);
-
-        //}
-
-        private static void SeedFilms(FilmsContext context)
+        public static void SeedFilms(FilmsContext context)
         {
             List<Category> categories = new List<Category>()
             {
@@ -31,7 +25,7 @@ namespace Sklep.DAL
 
             foreach (var category in categories)
             {
-                context.Categories.Add(category);
+                context.Categories.AddOrUpdate(category);
             }
 
             context.SaveChanges();
@@ -132,7 +126,7 @@ namespace Sklep.DAL
 
             foreach (var film in filmy)
             {
-                context.Films.Add(film);
+                context.Films.AddOrUpdate(film);
             }
 
             context.SaveChanges();

@@ -74,3 +74,6 @@ C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csp
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csproj.CopyComplete
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.dll
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.pdb
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.InitialCreate.resources
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csproj.GenerateResource.cache
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.deleteFilmLength.resources

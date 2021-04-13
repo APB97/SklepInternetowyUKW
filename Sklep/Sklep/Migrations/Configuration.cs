@@ -1,16 +1,16 @@
-﻿using System;
-using System.Data.Entity;
-using System.Data.Entity.Migrations;
-using System.Linq;
-
-namespace Sklep.Migrations
+﻿namespace Sklep.Migrations
 {
-    internal sealed class Configuration : DbMigrationsConfiguration<Sklep.DAL.FilmsContext>
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    public sealed class Configuration : DbMigrationsConfiguration<Sklep.DAL.FilmsContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "SklepUKW.DAL.FilmsContext";
+            ContextKey = "Sklep.DAL.FilmsContext";
         }
 
         protected override void Seed(Sklep.DAL.FilmsContext context)
