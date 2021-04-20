@@ -1,4 +1,5 @@
 ﻿using Sklep.DAL;
+using Sklep.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +21,21 @@ namespace Sklep.Controllers
         public ActionResult List(string categoryName)
         {
             var category = db.Categories.Include("Films").Where(c => c.Name.ToLower() == categoryName.ToLower()).Single();
+            IEnumerable<Models.Film> nowosci = db.Films.OrderByDescending(f => f.AddDate).Take(3);
+            IndexViewModel vm = new IndexViewModel()
+            {
+                Category = category,
+                FilmsFromCategory = category.Films.ToList(),
+                Top3NewestFilms = nowosci
+            };
+            return View(vm);
+        }
 
-            return View(category.Films.ToList());
+        [ChildActionOnly]
+        public ActionResult CategoriesMenu()
+        {
+            var categoryList = db.Categories.ToList();
+            return PartialView("_CategoriesMenu", categoryList);
         }
     }
 }

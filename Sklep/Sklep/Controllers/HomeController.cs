@@ -16,13 +16,7 @@ namespace Sklep.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            //db.Categories.Add(new Category { CategoryId = 7, Name = "Anime", Desc = "Nani?" });
-
-            var categories = db.Categories.ToList();
-
-            var ivm = new IndexViewModel() { Categories = categories };
-
-            return View(ivm);
+            return View();
         }
 
         public ActionResult StaticSite(string name)

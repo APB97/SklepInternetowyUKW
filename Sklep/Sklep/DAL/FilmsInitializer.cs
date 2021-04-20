@@ -25,7 +25,7 @@ namespace Sklep.DAL
 
             foreach (var category in categories)
             {
-                context.Categories.AddOrUpdate(category);
+                context.Categories.AddOrUpdate(c => c.Name,category);
             }
 
             context.SaveChanges();
@@ -41,7 +41,7 @@ namespace Sklep.DAL
                     Desc = "20 sierpnia 1973 roku teksańska policja trafiła do stojącego na uboczu domu Thomasa Hewitta - byłego pracownika lokalnej rzeźni. Na miejscu odkryli rozkładające się zwłoki 33 osób, które zostały zamordowane przez psychopatycznego zabójcę noszącego na twarzy maskę z ludzkiej skóry i posługującego się piłą mechaniczną.",
                     Price = 10,
                     ImageName = "Teksanska.jpg",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2020, 5, 4)
                 },
                 new Film()
                 {
@@ -52,7 +52,7 @@ namespace Sklep.DAL
                     Desc = "Mężczyzna dostaje obsesji na punkcie książki, która według niego opisuje i przewiduje jego życie i przyszłość.",
                     Price = 14,
                     ImageName = "Numer23.jpg",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2019, 5, 4)
                 },
                 new Film()
                 {
@@ -63,7 +63,7 @@ namespace Sklep.DAL
                     Desc = "Uznany pisarz przenosi się na prowincję, by w spokoju tworzyć kolejne książki. Wkrótce odwiedzi go tajemniczy mężczyzna, który oskarży Raineya o plagiat.",
                     Price = 12,
                     ImageName = "SekretneOkno.jpg",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2020, 6, 30)
                 },
                 new Film()
                 {
@@ -74,7 +74,7 @@ namespace Sklep.DAL
                     Desc = "Podróż hobbita z Shire i jego ośmiu towarzyszy, której celem jest zniszczenie potężnego pierścienia pożądanego przez Czarnego Władcę - Saurona.",
                     Price = 20,
                     ImageName = "DruzynaPierscienia.jpg",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2021, 3, 4)
                 },
                 new Film()
                 {
@@ -85,7 +85,7 @@ namespace Sklep.DAL
                     Desc = "Emerytowani agenci specjalni CIA zostają wrobieni w zamach. By się ratować, muszą reaktywować stary zespół.",
                     Price = 11,
                     ImageName = "Red.jpg",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2018, 5, 4)
                 },
                 new Film()
                 {
@@ -96,7 +96,7 @@ namespace Sklep.DAL
                     Desc = "Dziennikarz śledczy rozmawia z dziewięcioma księżmi katolickimi, którzy dopuścili się zbrodni pedofilii i molestowania nieletnich, a także ich ofiarami.",
                     Price = 0,
                     ImageName = "TylkoNieMow.jpg",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2017, 6, 7)
                 },
                 new Film()
                 {
@@ -107,7 +107,7 @@ namespace Sklep.DAL
                     Desc = "Wiedeń u progu XX w. Syn rzemieślnika, iluzjonista Eisenheim, wykorzystuje niezwykłe umiejętności, by zdobyć miłość arystokratki, narzeczonej austro-węgierskiego księcia.",
                     Price = 13,
                     ImageName = "Iluzjonista.jpg",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2016, 2, 2)
                 },
                 new Film()
                 {
@@ -118,7 +118,7 @@ namespace Sklep.DAL
                     Desc = "Grupa osób budzi się w pełnym śmiertelnych pułapek sześcianie. Nieznajomi muszą zacząć współpracować ze sobą, by przeżyć.",
                     Price = 15,
                     ImageName = "Cube.jpg",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2015, 5, 4)
                 },
                 new Film()
                 {
@@ -129,7 +129,7 @@ namespace Sklep.DAL
                     Desc = "Frank Cotton nabywa tajemniczą kostkę, za pomocą której można przywołać demony z piekła.",
                     Price = 16,
                     ImageName = "Hellraiser.JPG",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2018, 5, 4)
                 },
                 new Film()
                 {
@@ -140,13 +140,13 @@ namespace Sklep.DAL
                     Desc = "Seryjny morderca i inteligentna agentka łączą siły, by znaleźć przestępcę obdzierającego ze skóry swoje ofiary.",
                     Price = 17,
                     ImageName = "MilczenieOwiec.jpg",
-                    AddDate = DateTime.Now
+                    AddDate = new DateTime(2021, 3, 3)
                 }
             };
 
             foreach (var film in filmy)
             {
-                context.Films.AddOrUpdate(film);
+                context.Films.AddOrUpdate(f => f.Title, film);
             }
 
             context.SaveChanges();
