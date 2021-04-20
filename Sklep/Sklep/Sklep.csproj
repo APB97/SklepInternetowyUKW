@@ -170,6 +170,8 @@
     <Content Include="Views\Home\regulamin.cshtml" />
     <Content Include="Views\Films\List.cshtml" />
     <Content Include="Views\Shared\_CategoriesMenu.cshtml" />
+    <Content Include="Views\Films\Details.cshtml" />
+    <Content Include="Views\Films\_FilmsFromCategory.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

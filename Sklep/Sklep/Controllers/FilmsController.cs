@@ -31,11 +31,25 @@ namespace Sklep.Controllers
             return View(vm);
         }
 
+        public ActionResult Details(int id)
+        {
+            Models.Film film = db.Films.Find(id);
+
+            return View(film);
+        }
+
         [ChildActionOnly]
         public ActionResult CategoriesMenu()
         {
             var categoryList = db.Categories.ToList();
             return PartialView("_CategoriesMenu", categoryList);
+        }
+
+        [ChildActionOnly]
+        public ActionResult FilmsFromCategory(string categoryName)
+        {
+            var categoryWithFilms = db.Categories.Include("Films").Where(c => c.Name.ToLower() == categoryName.ToLower()).Single();
+            return PartialView("_FilmsFromCategory", categoryWithFilms.Films.ToList());
         }
     }
 }
