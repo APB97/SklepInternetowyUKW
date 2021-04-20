@@ -16,7 +16,9 @@ namespace Sklep.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            var topLongest = db.Films.OrderByDescending(f => f.FilmLength).Take(3).ToList();
+            var vm = new IndexLongestViewModel() { LongestFilms = topLongest };
+            return View(vm);
         }
 
         public ActionResult StaticSite(string name)
