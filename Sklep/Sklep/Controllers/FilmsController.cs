@@ -22,7 +22,7 @@ namespace Sklep.Controllers
         {
             var category = db.Categories.Include("Films").Where(c => c.Name.ToLower() == categoryName.ToLower()).Single();
             IEnumerable<Models.Film> nowosci = db.Films.OrderByDescending(f => f.AddDate).Take(3);
-            IndexViewModel vm = new IndexViewModel()
+            ListViewModel vm = new ListViewModel()
             {
                 Category = category,
                 FilmsFromCategory = category.Films.ToList(),

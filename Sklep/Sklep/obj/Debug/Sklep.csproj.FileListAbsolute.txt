@@ -83,3 +83,10 @@ C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Glimpse.Core.dl
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Glimpse.EF6.dll
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.add_AddDate.resources
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.add_FilmLength.resources
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.dll
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.WebActivator.dll
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\WebActivatorEx.dll
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Microsoft.Web.Administration.dll
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.xml
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.WebActivator.pdb
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.WebActivator.xml
