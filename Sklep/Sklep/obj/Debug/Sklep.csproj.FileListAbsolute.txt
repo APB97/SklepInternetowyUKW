@@ -69,7 +69,6 @@ C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\System.Web.Webp
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\System.Web.Helpers.xml
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\System.Web.Mvc.xml
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csprojAssemblyReference.cache
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csproj.CoreCompileInputs.cache
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csproj.CopyComplete
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.dll
@@ -90,3 +89,4 @@ C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Microsoft.Web.A
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.xml
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.WebActivator.pdb
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.WebActivator.xml
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csprojAssemblyReference.cache

@@ -80,3 +80,41 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.disabled{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px black;
+    pointer-events: none;
+}
+
+.SekcjaPrzyciski {
+    overflow: hidden;
+    font-size: 40px;
+}
+
+    .SekcjaPrzyciski :nth-child(1) {
+        float: left;
+    }
+
+    .SekcjaPrzyciski :nth-child(2) {
+        float: right;
+    }
+
+#CenaCalkowita {
+    width: 100%;
+    text-align: right;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    font-size: 35px;
+}
+
+#koszykTabela {
+    border-collapse: collapse;
+    font-size: 30px;
+}
+
+    #koszykTabela tr {
+        border-bottom: 1px solid #DADADA;
+    }
