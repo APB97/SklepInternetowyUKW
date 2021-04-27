@@ -4,12 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
-using System.Linq;
-using System.Web;
 
 namespace Sklep.DAL
 {
-    internal class FilmsInitializer : /*DropCreateDatabaseAlways<FilmsContext>*/MigrateDatabaseToLatestVersion<FilmsContext, Configuration>/*DropCreateDatabaseIfModelChanges<FilmsContext>*/
+    internal class FilmsInitializer : MigrateDatabaseToLatestVersion<FilmsContext, Configuration>
     {
         public static void SeedFilms(FilmsContext context)
         {
@@ -17,10 +15,9 @@ namespace Sklep.DAL
             {
                 new Category{ CategoryId = 1, Name = "Horror", Desc = "Strach się bać..." },
                 new Category{ CategoryId = 2, Name = "Komedia", Desc = "Śmiechu warte."},
-                new Category{ CategoryId = 3, Name = "Dokumnetalny", Desc = "Historia prawdziwa."},
+                new Category{ CategoryId = 3, Name = "Dokumentalny", Desc = "Historia prawdziwa."},
                 new Category{ CategoryId = 4, Name = "Thriller", Desc = "Aż ciarki przechodzą..."},
                 new Category{ CategoryId = 5, Name = "Sensacyjny", Desc = "Wartka akcja."},
-                new Category{ CategoryId = 6, Name = "Historyczny", Desc = "Historia lubi się powtarzać..."}
             };
 
             foreach (var category in categories)
