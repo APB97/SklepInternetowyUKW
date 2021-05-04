@@ -118,3 +118,11 @@ footer {
     #koszykTabela tr {
         border-bottom: 1px solid #DADADA;
     }
+
+#koszyk {
+    font-size: 48px;
+}
+
+div#menu a{
+    font-size: 36px;
+}

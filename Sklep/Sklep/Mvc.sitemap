@@ -2,7 +2,6 @@
 <mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
-
   <mvcSiteMapNode title="Home" controller="Home" action="Index">
     
     <mvcSiteMapNode title="" controller="Films" action="List" dynamicNodeProvider="Sklep.Infrastructure.CategoryDynamicNodeProvider, Sklep">
@@ -10,7 +9,8 @@
       <mvcSiteMapNode title="" controller="Films" action="Details" dynamicNodeProvider="Sklep.Infrastructure.FilmsDynamicNodeProvider, Sklep"/>
     
     </mvcSiteMapNode>
+    
+    <mvcSiteMapNode title="Koszyk" controller="Cart" action="Index"/>
   
   </mvcSiteMapNode>
-
 </mvcSiteMap>

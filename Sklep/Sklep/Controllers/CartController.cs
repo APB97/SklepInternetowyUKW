@@ -40,5 +40,22 @@ namespace Sklep.Controllers
             cartManager.AddToCart(id);
             return RedirectToAction(nameof(Index));
         }
+
+        public ActionResult RemoveFromCart(int id)
+        {
+            ItemRemoveViewModel vm = new ItemRemoveViewModel()
+            {
+                ItemId = id,
+                ItemQuantity = cartManager.RemoveFromCart(id),
+                CartValue = cartManager.GetCartValue(),
+                CartQuantity = cartManager.GetCartQuantity()
+            };
+            return Json(vm);
+        }
+
+        public int GetCartQuantity()
+        {
+            return cartManager.GetCartQuantity();
+        }
     }
 }

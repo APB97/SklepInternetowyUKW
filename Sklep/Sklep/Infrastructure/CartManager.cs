@@ -35,11 +35,9 @@ namespace Sklep.Infrastructure
             if (thisFilm != null)
             {
                 thisFilm.Quantity++;
-                //thisFilm.TotalItemPrice += thisFilm.Film.Price;
             }
             else
             {
-                //var film = db.Films.Where(f => f.FilmId == filmId).SingleOrDefault();
                 var film = db.Films.Find(filmId);
                 if (film == null)
                     return;

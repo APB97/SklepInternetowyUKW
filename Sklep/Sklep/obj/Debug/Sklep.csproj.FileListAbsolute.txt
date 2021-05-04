@@ -89,4 +89,3 @@ C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Microsoft.Web.A
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.xml
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.WebActivator.pdb
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\MvcSiteMapProvider.WebActivator.xml
-C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csprojAssemblyReference.cache

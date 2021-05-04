@@ -9,6 +9,9 @@
 <body>
     <header>
         @Html.Action("CategoriesMenu", "Films")
+        <div>
+            <a id="koszyk" href="@Url.Action("Index", "Cart")">&#128717; (<span id="totalQuantity">@Html.Action("GetCartQuantity", "Cart")</span>)</a>
+        </div>
     </header>
 
     <div>
@@ -23,5 +26,7 @@
             <a href="@Url.Action("StaticSite", "Home", new { name = "kontakt" })">Kontakt</a>
         </div>
     </footer>
+
+    @RenderSection("Scripts", false)
 </body>
 </html>
