@@ -10,6 +10,7 @@
     <header>
         @Html.Action("CategoriesMenu", "Films")
         <div>
+            @Html.Partial("_PartialLogin")
             <a id="koszyk" href="@Url.Action("Index", "Cart")">&#128717; (<span id="totalQuantity">@Html.Action("GetCartQuantity", "Cart")</span>)</a>
         </div>
     </header>

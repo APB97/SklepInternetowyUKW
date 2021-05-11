@@ -1,13 +1,10 @@
-﻿using Sklep.Models;
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using Sklep.Models;
 using System.Data.Entity;
-using System.Linq;
-using System.Web;
 
 namespace Sklep.DAL
 {
-    public class FilmsContext : DbContext
+    public class FilmsContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Film> Films { get; set; }
 
@@ -21,6 +18,11 @@ namespace Sklep.DAL
         static FilmsContext()
         {
             Database.SetInitializer(new FilmsInitializer());
+        }
+
+        public static FilmsContext Create()
+        {
+            return new FilmsContext();
         }
     }
 }
