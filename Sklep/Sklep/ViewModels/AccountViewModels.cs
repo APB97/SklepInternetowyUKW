@@ -6,9 +6,21 @@ using System.Web;
 
 namespace Sklep.ViewModels
 {
-    public class LoginViewmModel
+    public class LoginViewModel
     {
+        [Required(ErrorMessage = "Musisz podać adres e-mail")]
+        [EmailAddress]
+        [Display(Name = "Adres e-mail")]
+        public string Email { get; set; }
 
+        [Required(ErrorMessage = "Musisz podać hasło")]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        [Display(Name = "Hasło")]
+        public string Password { get; set; }
+
+        [Display(Name = "Zapamiętaj mnie")]
+        public bool RememberMe { get; set; }
     }
 
     public class RegisterViewModel
@@ -19,7 +31,6 @@ namespace Sklep.ViewModels
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Musisz podać hasło")]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Hasło")]
         public string Password { get; set; }

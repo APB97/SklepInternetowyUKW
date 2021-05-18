@@ -1,0 +1,29 @@
+﻿@model Sklep.ViewModels.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <legend> Logowanie </legend>
+        @Html.LabelFor(m => m.Email):
+        @Html.TextBoxFor(m => m.Email)
+        <br />
+        @Html.ValidationMessageFor(m => m.Email)
+        <br />
+        @Html.LabelFor(m => m.Password):
+        @Html.PasswordFor(m => m.Password)
+        <br />
+        @Html.ValidationMessageFor(m => m.Password)
+        <br />
+        @Html.CheckBoxFor(m => m.RememberMe, new { @checked = "checked" })
+        @Html.LabelFor(m => m.RememberMe)
+        <br />
+        <input type="submit" value="Zaloguj" id="buttonLogin">
+        <br />
+        <br />
+        <a href="@Url.Action("Register", "Account")"><u>Nie masz konta? Zarejestruj się!</u></a>
+    </fieldset>
+}

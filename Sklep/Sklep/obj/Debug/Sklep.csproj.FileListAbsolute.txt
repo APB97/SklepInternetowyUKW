@@ -108,6 +108,6 @@ C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Microsoft.Owin.
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Microsoft.Owin.Security.Cookies.xml
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Newtonsoft.Json.xml
-C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csprojAssemblyReference.cache
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.Add_Users.resources
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.Add_UserData.resources
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.Fix_UserData.resources

@@ -234,6 +234,10 @@
     <Compile Include="Migrations\202105110908540_Add_UserData.designer.cs">
       <DependentUpon>202105110908540_Add_UserData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105180914010_Fix_UserData.cs" />
+    <Compile Include="Migrations\202105180914010_Fix_UserData.designer.cs">
+      <DependentUpon>202105180914010_Fix_UserData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Infrastructure\CartManager.cs" />
     <Compile Include="Infrastructure\CategoryDynamicNodeProvider.cs" />
@@ -306,6 +310,8 @@
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />
     <Content Include="Views\Shared\_PartialLogin.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -315,7 +321,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104130638069_InitialCreate.resx">
@@ -338,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105110908540_Add_UserData.resx">
       <DependentUpon>202105110908540_Add_UserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105180914010_Fix_UserData.resx">
+      <DependentUpon>202105180914010_Fix_UserData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
