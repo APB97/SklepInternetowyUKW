@@ -143,6 +143,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ViewModels\ManageViewModels.cs" />
     <Content Include="Content\banner-film.png" />
     <Content Include="Content\Graphics\Cube.JPG" />
     <Content Include="Content\Graphics\DruzynaPierscienia.JPG" />
@@ -210,6 +211,11 @@
     <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +225,7 @@
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\FilmsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DAL\FilmsContext.cs" />
     <Compile Include="DAL\FilmsInitializer.cs" />
     <Compile Include="Global.asax.cs">
@@ -321,6 +328,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Manage\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104130638069_InitialCreate.resx">

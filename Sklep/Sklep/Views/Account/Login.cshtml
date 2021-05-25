@@ -8,15 +8,16 @@
     @Html.AntiForgeryToken()
     <fieldset>
         <legend> Logowanie </legend>
+        @Html.ValidationSummary("", new { @class = "error" })
         @Html.LabelFor(m => m.Email):
         @Html.TextBoxFor(m => m.Email)
         <br />
-        @Html.ValidationMessageFor(m => m.Email)
+        <span class="error">@Html.ValidationMessageFor(m => m.Email)</span>
         <br />
         @Html.LabelFor(m => m.Password):
         @Html.PasswordFor(m => m.Password)
         <br />
-        @Html.ValidationMessageFor(m => m.Password)
+        <span class="error">@Html.ValidationMessageFor(m => m.Password)</span>
         <br />
         @Html.CheckBoxFor(m => m.RememberMe, new { @checked = "checked" })
         @Html.LabelFor(m => m.RememberMe)
@@ -26,4 +27,11 @@
         <br />
         <a href="@Url.Action("Register", "Account")"><u>Nie masz konta? Zarejestruj się!</u></a>
     </fieldset>
+}
+
+@section Scripts
+{
+    <script src="~/Scripts/jquery-3.6.0.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
 }

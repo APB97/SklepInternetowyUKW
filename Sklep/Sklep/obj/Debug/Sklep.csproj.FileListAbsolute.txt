@@ -111,3 +111,4 @@ C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\bin\Newtonsoft.Json
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.Add_Users.resources
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.Add_UserData.resources
 C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.Fix_UserData.resources
+C:\Users\Adrian\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csprojAssemblyReference.cache

@@ -8,22 +8,32 @@
     @Html.AntiForgeryToken()
     <fieldset>
         <legend> Rejestracja </legend>
-        @Html.ValidationSummary()
+        @Html.ValidationSummary("", new { @class = "error" })
         <br />
         @Html.LabelFor(m => m.Email):
         @Html.TextBoxFor(m => m.Email)
-        @Html.ValidationMessageFor(m => m.Email)
+        <br />
+        <span class="error">@Html.ValidationMessageFor(m => m.Email)</span>
         <br />
         @Html.LabelFor(m => m.Password):
         @Html.PasswordFor(m => m.Password)
-        @Html.ValidationMessageFor(m => m.Password)
+        <br />
+        <span class="error">@Html.ValidationMessageFor(m => m.Password)</span>
         <br />
         @Html.LabelFor(m => m.ConfirmPassword):
         @Html.PasswordFor(m => m.ConfirmPassword)
-        @Html.ValidationMessageFor(m => m.ConfirmPassword)
+        <br />
+        <span class="error">@Html.ValidationMessageFor(m => m.ConfirmPassword)</span>
         <br />
         <input type="submit" value="Zarejestruj" id="buttonLogin">
         <br />
         @*<a href="@Url.Action("Register", "Account")"><u>Nie masz konta? Zarejestruj się!</u></a>*@
     </fieldset>
+}
+
+@section Scripts
+{
+    <script src="~/Scripts/jquery-3.6.0.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
 }
