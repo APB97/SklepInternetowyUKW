@@ -319,6 +319,7 @@
     <Content Include="Views\Shared\_PartialLogin.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -328,7 +329,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Manage\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104130638069_InitialCreate.resx">

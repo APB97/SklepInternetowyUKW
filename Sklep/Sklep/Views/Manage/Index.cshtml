@@ -1,0 +1,52 @@
+﻿@model Sklep.ViewModels.ManageViewModel
+@{
+    ViewBag.Title = "Zarządzanie kontem";
+}
+
+<h3>@ViewBag.StatusMessage</h3>
+
+@using (Html.BeginForm("ChangeUserData", "Manage"))
+{
+    <fieldset>
+        <legend>Zmiana danych użytkownika</legend>
+
+        @Html.LabelFor(m => m.UserData.Name, "Imię: ")
+        @Html.TextBoxFor(m => m.UserData.Name)
+        <br />
+
+        @Html.LabelFor(m => m.UserData.Surname, "Nazwisko: ")
+        @Html.TextBoxFor(m => m.UserData.Surname)
+        <br />
+
+        @Html.LabelFor(m => m.UserData.PhoneNumber, "Telefon: ")
+        @Html.TextBoxFor(m => m.UserData.PhoneNumber)
+        <br />
+
+        @Html.LabelFor(m => m.UserData.Email, "Adres E-mail: ")
+        @Html.TextBoxFor(m => m.UserData.Email)
+        <br />
+
+        <input type="submit" value="Zmień" />
+    </fieldset>
+}
+
+@using (Html.BeginForm("ChangePassword", "Manage"))
+{
+    <fieldset>
+        <legend>Zmiana hasła użytkownika</legend>
+
+        @Html.LabelFor(m => m.ChangePassword.OldPassword, "Obecne: ")
+        @Html.PasswordFor(m => m.ChangePassword.OldPassword)
+        <br />
+
+        @Html.LabelFor(m => m.ChangePassword.NewPassword, "Nowe: ")
+        @Html.PasswordFor(m => m.ChangePassword.NewPassword)
+        <br />
+
+        @Html.LabelFor(m => m.ChangePassword.ConfirmPassword, "Potwierdź nowe: ")
+        @Html.PasswordFor(m => m.ChangePassword.ConfirmPassword)
+        <br />
+
+        <input type="submit" value="Zmień" />
+    </fieldset>
+}
